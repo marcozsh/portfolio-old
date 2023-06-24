@@ -295,12 +295,12 @@ body{
         }
 
         .svg-inline--fa{
-            color: #5d5bf1;
+            color: #a5a3f0;
             width: 50px;
             height: 50px;
         }
         .svg-inline--fa:hover{
-            color: #f8f8f8;
+            color: #0f0f0f;
             width: 50px;
             height: 50px;
             animation: fadeIn 1.4s;
