@@ -223,6 +223,7 @@ body{
     /*ABOUT*/
         #about p {
             font-size: 1.2rem;
+            max-width: 60rem;
         }
         #about p a {
             text-decoration: none;
