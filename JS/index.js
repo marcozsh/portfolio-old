@@ -14,9 +14,6 @@ const header = $(".header");
 // mouse effect
 main.addEventListener('mousemove', (event) => {
   let final_position = 250;
-  if (mouse_over.style.width >= 992) {
-    final_position = 50;
-  }
   let position_y = event.pageY;
   let position_x = event.pageX;
   mouse_over.style.top = (position_y - final_position) + "px";
