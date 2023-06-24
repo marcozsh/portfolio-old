@@ -1,0 +1,77 @@
+:root{
+    --background: linear-gradient(220.55deg, #5d5bf1 0%, #0B0A47 100%);
+}
+@media (max-width: 1366px) {
+    .header{
+        width: 0%;
+        visibility: hidden;
+    }
+    .main-page{
+        padding-left: initial;
+    }
+    #menu-btn{
+        visibility: visible !important;
+    }
+    main article{
+        width:95%;
+    }
+    .header #header-nav, .header-mobile #header-nav{
+        margin: 1em 0px 8em 0px;
+    }
+}
+@media (min-width: 992px) {
+    main article{
+        min-height: 100vh;
+    }
+}
+@media (max-width: 992px) {
+    h1{
+        font-size: 3rem !important;
+    }
+    span, h2{
+        font-size: 1.4rem !important;
+    }
+    p{
+        font-size: 1rem !important; 
+    }
+    main article{
+        min-height: 100vh;
+    }
+    .main-page{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mouse-over{
+       display: none; 
+    }
+    .contact-thinks, .contact-thinks li{
+        padding-left: 0;
+        font-size: 0.2rem;
+    }
+    .card{
+        margin-left: 30px;
+    }
+}
+@media (max-width:550px){
+    #name-container{
+        text-align: center;
+        align-items: center;
+    }
+
+    .socials{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .contact-thinks img {
+        width: 50px;
+        height: 50px;
+    }
+    .header-mobile #header-logo{
+        margin-bottom: 2em;
+    }
+    #landing-page {
+        justify-content: start;
+        padding-top: 8rem;
+    }
+}
