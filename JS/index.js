@@ -1,9 +1,17 @@
 window.onbeforeunload = ()=>{
     window.scrollTo(0,0);
 }
+
+//selector
+const $ = s => document.querySelector(s);
+
+const main = $(".body");
+const mouse_over = $(".mouse-over");
+const header_nav = $("#header-nav");
+const btn_menu = $("#menu-btn");
+const header = $(".header");
+
 // mouse effect
-const main = document.querySelector(".body");
-const mouse_over = document.querySelector(".mouse-over");
 main.addEventListener('mousemove', (event) => {
   let final_position = 250;
   if (mouse_over.style.width >= 992) {
@@ -14,8 +22,6 @@ main.addEventListener('mousemove', (event) => {
   mouse_over.style.top = (position_y - final_position) + "px";
   mouse_over.style.left = (position_x -final_position) + "px";
 });
-const btn_menu = document.getElementById("menu-btn");
-const header = document.querySelector(".header");
 btn_menu.addEventListener('click', () =>{
   let actual_class = header.classList[0]
   let class_header = "header-mobile";
@@ -24,7 +30,6 @@ btn_menu.addEventListener('click', () =>{
   }else if (actual_class == "header-mobile-hidden") {
     class_header = "header-mobile";
   }
-  console.log(class_header)
   header.classList.replace(actual_class,class_header);
   btn_menu.style.animation = "fadeOut 2s ease-out";
   setTimeout(
@@ -34,7 +39,6 @@ btn_menu.addEventListener('click', () =>{
     }
   ,1000);
 });
-const header_nav = document.getElementById("header-nav");
 header_nav.addEventListener('click', (e) =>{
   header.classList.replace("header-mobile", "header-mobile-hidden");
   btn_menu.style.display="block";

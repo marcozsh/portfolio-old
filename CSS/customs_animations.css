@@ -3,8 +3,7 @@
     --color: #560bad;
     font-family: inherit;
     display: inline-block;
-    width: 8em;
-    height: 2.6em;
+    height: 2.7em;
     line-height: 2.5em;
     margin: 20px;
     position: relative;
@@ -15,7 +14,7 @@
     font-size: 17px;
     border-radius: 6px;
     font-weight: 500;
-    color: white;
+    color: rgb(195, 99, 219);
     background-color: #5d5bf1;
     cursor:pointer;
 }
