@@ -10,6 +10,11 @@ html{
     overflow-y: scroll;
     backdrop-filter: blur(3021300px);
     ::-webkit-scrollbar {display: none;}
+    
+}
+p{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
 }
 ul{
     list-style: none;
@@ -17,6 +22,16 @@ ul{
 }
 body{
     width: 100vw;
+}
+
+.hand-scroll-down{
+    position: absolute;
+    left: calc(90%);
+    bottom: 15px;
+    animation: shakeY 5s ease-in infinite;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .mouse-over{
@@ -41,7 +56,8 @@ body{
 /*HEADER*/
     .menu-btn-container{
         display: flex;
-        justify-content: end;
+        position: absolute;
+        left: calc(90%);
     }
     #menu-btn {
         visibility: hidden;
@@ -94,6 +110,7 @@ body{
         width: 100vw;
         height: 100%;
         visibility: visible;
+        z-index: 10;
         animation: 1s ease-in 0s 1 normal none running fadeIn;
     }
 
@@ -196,7 +213,6 @@ body{
     /*LANDING-PAGE*/
     /*ABOUT*/
         #about p {
-            font-size: 1.2rem;
             max-width: 60rem;
         }
         #about p a {
@@ -226,9 +242,7 @@ body{
         .frameworks li, .data-bases li, .others li{
             margin-right: 1rem;
         }
-        #skills p {
-            font-size: 1.2rem;
-        }
+
         #skills p a {
             text-decoration: none;
             color: white;
@@ -265,6 +279,9 @@ body{
             margin: 3rem 0rem 3rem 3rem;
         }
         
+        .card-body p{
+            font-size: 1.3rem;
+        }
         .card-body{
             text-align: center;
         }

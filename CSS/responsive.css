@@ -15,6 +15,12 @@
     .header #header-nav, .header-mobile #header-nav{
         margin: 1em 0px 8em 0px;
     }
+    .hand-scroll-down{
+        left: calc(47%);
+    }
+    .menu-btn-container{
+        left: calc(85%);
+    }
 }
 @media (min-width: 992px) {
     main article{
@@ -51,6 +57,12 @@
     }
 }
 @media (max-width:550px){
+    .main-page{
+        place-items: center;
+    }
+    .menu-btn-container{
+        left: calc(70%);
+    }
     #name-container{
         text-align: center;
         align-items: center;
