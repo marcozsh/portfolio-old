@@ -1,10 +1,9 @@
 /*MENU BUTTON*/
 .menu-btn {
+    display: flex;
+    padding: 8px;
     --color: #560bad;
     font-family: inherit;
-    display: inline-block;
-    height: 2.7em;
-    line-height: 2.5em;
     margin: 20px;
     position: relative;
     overflow: hidden;
@@ -14,7 +13,7 @@
     font-size: 17px;
     border-radius: 6px;
     font-weight: 500;
-    color: rgb(195, 99, 219);
+    color: rgb(0, 0, 0);
     background-color: #5d5bf1;
     cursor:pointer;
 }

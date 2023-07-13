@@ -1,6 +1,7 @@
 /*GLOBAL PARAMETRES*/
 :root{
     --background: linear-gradient(350.55deg, #5d5bf1 0%, #1e1d52 100%);
+    --mouse-over:linear-gradient(350.55deg, #2a2a47 0%, #1e1d52 100%);;
 }
 html{
     background-color: rgb(15, 20, 26);
@@ -23,6 +24,14 @@ ul{
 body{
     width: 100vw;
 }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: #5d5bf1;
+    transition: color .3s ease;
+}
 
 .hand-scroll-down{
     position: absolute;
@@ -37,12 +46,12 @@ body{
 .mouse-over{
     position:absolute;
     z-index: -3;
-    background: var(--background);
+    background: var(--mouse-over);
     width: 500px;
     height: 500px;
     border-radius: 100%;
     filter: blur(50px);
-    animation: rotate 10s linear infinite;
+    animation: rotate 5s linear infinite;
 }
 @keyframes rotate {
     0%{
@@ -76,6 +85,7 @@ body{
         display: block;
         width: calc(300% + 1.3px);
         height: 1000px;
+        opacity: 0.8;
     }
     .divider .shape-fill {
         fill: #5d5bf1;
@@ -111,7 +121,7 @@ body{
         height: 100%;
         visibility: visible;
         z-index: 10;
-        animation: 1s ease-in 0s 1 normal none running fadeIn;
+        animation: 0.3s ease-in 0s 1 normal none running fadeIn;
     }
 
     .header-mobile-hidden{
@@ -138,8 +148,7 @@ body{
         line-height: 5rem;
         color: #5d5bf1;
         text-decoration: none;
-        animation: fadeIn;
-        animation-duration: 0.2s;
+        transition: color .3s ease, opacity .3s ease;
     }
     .header #header-logo, .header-mobile #header-logo{
         display: flex;
@@ -233,20 +242,17 @@ body{
         .skill-set, .frameworks, .data-bases, .others{
             display: flex;
             flex-wrap: wrap;
+            padding: 30px;
+            padding-left: initial;
         }
 
-        .skill-set li{
+        .skill-set img,.frameworks img, .data-bases img, .others img{
             margin-right: 1rem;
         }
-
-        .frameworks li, .data-bases li, .others li{
-            margin-right: 1rem;
+        .tech-img{
+            border-radius: 10px;
         }
 
-        #skills p a {
-            text-decoration: none;
-            color: white;
-        }
         #skills {
             display: flex;
             flex-direction: column;
@@ -258,6 +264,9 @@ body{
         }
     /*SKILLS*/
     /*PROJECTS*/
+        .card img {
+            object-fit: cover;
+        }
         .projects-container{
             display: flex;
             width: 100%;
@@ -274,16 +283,27 @@ body{
             line-height: 1.7rem;
         }
         .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: 300px;
             border: 1px solid #5d5bf1;
             margin: 3rem 0rem 3rem 3rem;
         }
+        .card-title{
+            text-align: center;
+            padding: 15px;
+        }
         
-        .card-body p{
-            font-size: 1.3rem;
+        .card-title p{
+            font-size: 1.1rem;
+        }
+        .card-title h2{
+            font-size: 2rem;
         }
         .card-body{
             text-align: center;
+            padding: 15px;
         }
 
         .svg-inline--fa{
@@ -292,10 +312,10 @@ body{
             height: 50px;
         }
         .svg-inline--fa:hover{
-            color: #5d5bf1;
+            color: #ff57f8;
             width: 50px;
             height: 50px;
-            animation: fadeIn 0.4s;
+            transition: color .3s ease, opacity .3s ease;
         }
 
     /*PROJECTS*/
@@ -327,5 +347,19 @@ body{
             color: white;
         }
     /*CONTACT*/
+    /*FOOTER*/
+    footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer p{
+        font-size: 1rem;
+        line-height: 0;
+    }
+    footer a{
+        padding-top: 30px;
+    }
+    /*FOOTER*/
 /*MAIN PAGE*/
 
