@@ -164,6 +164,11 @@ a:hover{
         align-items: center;
         margin: 8em 0px 8em 0px;
     }
+
+    #toggle-button-container{
+        display: flex;
+        justify-content: center;
+    }
 /*HEADER*/
 
 /*MAIN PAGE*/
@@ -194,6 +199,7 @@ a:hover{
             flex-direction: column;
             justify-content: center;
             max-width: 75rem;
+            padding-left:10px
         }
         #landing-page h1{
             margin: 0;
@@ -267,6 +273,14 @@ a:hover{
         .card img {
             object-fit: cover;
         }
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-container > * {
+            margin-top:20px
+        }
         .projects-container{
             display: flex;
             width: 100%;
@@ -285,7 +299,6 @@ a:hover{
         .card{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             width: 300px;
             border: 1px solid #5d5bf1;
             margin: 3rem 0rem 3rem 3rem;

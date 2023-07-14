@@ -10,7 +10,8 @@ const mouse_over = $(".mouse-over");
 const header_nav = $("#header-nav");
 const btn_menu = $("#menu-btn");
 const header = $(".header");
-
+const header_mobile = $(".header-mobile");
+const switch_button = $(".switch");
 // mouse effect
 main.addEventListener('mousemove', (event) => {
   let final_position = 250;
@@ -28,7 +29,7 @@ btn_menu.addEventListener('click', () =>{
     class_header = "header-mobile";
   }
   header.classList.replace(actual_class,class_header);
-  btn_menu.style.animation = "fadeOut 2s ease-out";
+  btn_menu.style.animation = "fadeIn 2s ease-out";
   setTimeout(
     () => {
       btn_menu.style.display="none";
@@ -36,7 +37,7 @@ btn_menu.addEventListener('click', () =>{
     }
   ,1000);
 });
-header_nav.addEventListener('click', (e) =>{
+header_nav.addEventListener('click', () =>{
   header.classList.replace("header-mobile", "header-mobile-hidden");
   btn_menu.style.display="block";
 });
@@ -45,4 +46,10 @@ window.addEventListener("resize" ,()=>{
     header.classList.replace(header.classList[0], "header");
   }
 });
+
+switch_button.addEventListener("click", () => {
+  let display = mouse_over.style.display === '' ? 'none' : '';
+  mouse_over.style.display = display;
+
+})
 
