@@ -93,7 +93,7 @@
   
   .switch:checked:before {
     transform: translateX(100%);
-    border-color: rgba(77, 175, 80, 1);
+    border-color: rgb(102 92 241);
   }
 /*TOGGLE BUTTON*/
 
