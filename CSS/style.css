@@ -14,8 +14,9 @@ html{
     
 }
 p{
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+    font-size: 18px;
+    line-height: 28px;
+    text-wrap: pretty;
 }
 ul{
     list-style: none;
@@ -31,6 +32,9 @@ a{
 a:hover{
     color: #5d5bf1;
     transition: color .3s ease;
+}
+article span{
+    margin:35px;
 }
 
 .hand-scroll-down{
@@ -130,7 +134,7 @@ a:hover{
 
 
 
-    .header nav a, .header-mobile nav a{
+    .header nav a, .header-mobile nav a, #toggle-button-container h5{
         text-align: center;
         width: 100%;
         display: block;
@@ -167,27 +171,32 @@ a:hover{
 
     #toggle-button-container{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
     }
 /*HEADER*/
 
 /*MAIN PAGE*/
     .main-page{
         width: auto;
-        padding-left: 15rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-left: 14rem;
     }
 
     .separator{
         margin: 0;
         border: 1px solid #5d5bf1ed;
         opacity: 0.2;
+        width: 100%;
     }
 
     .line{
         margin-top: 15px;
         border: 1px solid white;
+        width: 85%;
     }
 
     main article{
@@ -216,11 +225,11 @@ a:hover{
             flex-direction: column;
         }
         #landing-page .my-name{
-            font-size: 5rem;
+            font-size: 4rem;
         }
         #stack{
             font-size: 2rem;
-            margin-top: 3rem;
+            margin: 25px 0 0 0;
         }
         .hi-gif{
             width: 11rem;
@@ -333,31 +342,17 @@ a:hover{
 
     /*PROJECTS*/
     /*CONTACT*/
-        #contact span{
-            font-size: 3rem;
-        }
         #contact{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            padding-top: 20px;
         }
-
         .contact-thinks{
-            display: flex;
-            flex-direction: column;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
         }
-        .contact-thinks img{
-            width: 50px;
-            height: 50px;
-        }
-        .contact-thinks li {
-            display: flex;
-            align-items: center;
-        }
-        .contact-thinks li a {
-            font-size: 1.4rem;
-            text-decoration:underline;
-            color: white;
+        #mail {
+            vertical-align: middle !important;
+            text-decoration: underline !important;
         }
     /*CONTACT*/
     /*FOOTER*/

@@ -14,6 +14,9 @@ const header_mobile = $(".header-mobile");
 const switch_button = $(".switch");
 // mouse effect
 main.addEventListener('mousemove', (event) => {
+  if (!switch_button.checked) {
+    return
+  }
   let final_position = 250;
   let position_y = event.pageY;
   let position_x = event.pageX;
