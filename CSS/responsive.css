@@ -1,36 +1,28 @@
 @media (max-width: 1366px) {
-    .header{
-        width: 0%;
-        visibility: hidden;
-    }
     .main-page{
         padding-left: 42px;
     }
-    #menu-btn{
-        visibility: visible !important;
+    .main-page{
+        padding-left: 1px;
     }
     main article{
         width:95%;
     }
-    .header #header-nav, .header-mobile #header-nav{
-        margin: 1em 0px 8em 0px;
-    }
     .hand-scroll-down{
         left: calc(47%);
     }
-    .menu-btn-container{
-        left: calc(85%);
-    }
-    #toggle-button-container , .mouse-over{
-        display: none;
-    }
+
 }
 @media (min-width: 992px) {
     main article{
         min-height: 100vh;
     }
+    
 }
 @media (max-width: 992px) {
+    .hand-scroll-down{
+        display: none;
+    }
     .skill-set img, .frameworks img, .data-bases img, .others img {
         margin-top: 1rem;
     }
@@ -79,11 +71,9 @@
     .main-page{
         padding-left: 13px;
     }
+
     .main-page{
         padding: initial;
-    }
-    .menu-btn-container{
-        left: calc(70%);
     }
     #name-container{
         text-align: center;

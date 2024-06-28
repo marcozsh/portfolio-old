@@ -1,0 +1,45 @@
+@media (max-width:1750px){
+    .cv-button{
+        bottom: 70px;
+        left: calc(90%);
+    }
+}
+@media (max-width: 1366px) {
+    .header{
+        width: 0%;
+        visibility: hidden;
+    }
+    #menu-btn{
+        visibility: visible !important;
+    }
+
+    .header #header-nav, .header-mobile #header-nav{
+        margin: 1em 0px 8em 0px;
+    }
+    .menu-btn-container{
+        left: calc(85%);
+    }
+    #toggle-button-container , .mouse-over{
+        display: none;
+    }
+    .cv-button{
+        bottom: 15px;
+        left: calc(0%);
+    }
+}
+@media (max-width: 992px) {
+    .cv-button{
+        left: calc(40%);
+    }
+}
+@media (max-width:550px){
+    .menu-btn-container{
+        left: calc(70%);
+    }
+    .header-mobile #header-logo{
+        margin-bottom: 2em;
+    }
+    .cv-button{
+        left: calc(33%);
+    }
+}

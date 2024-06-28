@@ -1,0 +1,135 @@
+/*HEADER*/
+.menu-btn-container{
+    display: flex;
+    position: absolute;
+    left: calc(90%);
+}
+#menu-btn {
+    visibility: hidden;
+}
+.divider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+.divider svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 1000px;
+    opacity: 0.8;
+}
+.divider .shape-fill {
+    fill: #5d5bf1;
+}
+.header{
+    /*background-color: rgb(77, 77, 77);*/
+    font-family: 'Comfortaa';
+    background-color: rgba(0, 0, 0,.4);
+    backdrop-filter: blur(200px);
+    display: flex;
+    width: 14rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header-mobile{
+    background-color: rgba(0, 0, 0,.4);
+    backdrop-filter: blur(200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    visibility: visible;
+    z-index: 10;
+    animation: 0.3s ease-in 0s 1 normal none running fadeIn;
+}
+
+.header-mobile-hidden{
+    display: none;
+}
+
+
+
+.header nav a, .header-mobile nav a, #toggle-button-container h5{
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.header nav a:hover, .header-mobile nav a:hover{
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 5rem;
+    color: #5d5bf1;
+    text-decoration: none;
+    transition: color .3s ease, opacity .3s ease;
+}
+.header #header-logo, .header-mobile #header-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header #header-nav , .header-mobile #header-logo{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 0px 8em 0px;
+}
+
+#toggle-button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*HEADER*/
+
+.cv-button {
+    width: 110px;
+    height: 20px;
+    background: #5755ce;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    text-decoration: none;
+    font-size: 14px;
+    position: fixed;
+    bottom: 15px;
+    left: calc(12%);
+    z-index: 999;
+}
+a:hover{
+    color: #5d5bf1;
+    transition: color .3s ease;
+}

@@ -1,7 +1,11 @@
 /*GLOBAL PARAMETRES*/
 :root{
     --background: linear-gradient(350.55deg, #5d5bf1 0%, #1e1d52 100%);
-    --mouse-over:linear-gradient(350.55deg, #2a2a47 0%, #1e1d52 100%);;
+    
+}
+::view-transition-old(root),
+::view-transition-new(root){
+    animation-duration: .5s;
 }
 html{
     background-color: rgb(15, 20, 26);
@@ -25,14 +29,7 @@ ul{
 body{
     width: 100vw;
 }
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-a:hover{
-    color: #5d5bf1;
-    transition: color .3s ease;
-}
+
 article span{
     margin:35px;
 }
@@ -47,15 +44,8 @@ article span{
     text-decoration: none;
 }
 
-.mouse-over{
-    position:absolute;
-    z-index: -3;
-    background: var(--mouse-over);
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    filter: blur(50px);
-    animation: rotate 5s linear infinite;
+a {
+    color: #fff;
 }
 @keyframes rotate {
     0%{
@@ -341,33 +331,5 @@ article span{
         }
 
     /*PROJECTS*/
-    /*CONTACT*/
-        #contact{
-            padding-top: 20px;
-        }
-        .contact-thinks{
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-        #mail {
-            vertical-align: middle !important;
-            text-decoration: underline !important;
-        }
-    /*CONTACT*/
-    /*FOOTER*/
-    footer{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    footer p{
-        font-size: 1rem;
-        line-height: 0;
-    }
-    footer a{
-        padding-top: 30px;
-    }
-    /*FOOTER*/
-/*MAIN PAGE*/
 
+/*MAIN PAGE*/

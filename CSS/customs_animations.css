@@ -1,3 +1,7 @@
+:root{
+  --mouse-over:linear-gradient(350.55deg, #2a2a47 0%, #1e1d52 100%);;
+}
+
 /*MENU BUTTON*/
 .menu-btn {
     display: flex;
@@ -96,4 +100,14 @@
     border-color: rgb(102 92 241);
   }
 /*TOGGLE BUTTON*/
+.mouse-over{
+    position:absolute;
+    z-index: -3;
+    background: var(--mouse-over);
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    filter: blur(50px);
+    animation: rotate 5s linear infinite;
+}
 

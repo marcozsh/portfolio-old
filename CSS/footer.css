@@ -1,0 +1,29 @@
+/*FOOTER*/
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+footer p{
+    font-size: 1rem;
+    line-height: 0;
+}
+footer a{
+    padding-top: 30px;
+}
+/*FOOTER*/
+/*CONTACT*/
+#contact{
+    padding-top: 20px;
+}
+.contact-thinks{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+#mail {
+    vertical-align: middle !important;
+    text-decoration: underline !important;
+}
+/*CONTACT*/
