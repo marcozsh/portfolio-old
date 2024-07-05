@@ -271,19 +271,23 @@ a {
     /*PROJECTS*/
         .card img {
             object-fit: cover;
+            border-radius: 4px;
         }
         .card-container{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+        /*
         .card-container > * {
             margin-top:20px
         }
+        */
         .projects-container{
             display: flex;
             width: 100%;
             flex-wrap: wrap;
+            gap: 10px;
         }
         #projects span{
             font-size: 3rem;
@@ -301,6 +305,8 @@ a {
             width: 300px;
             border: 1px solid #5d5bf1;
             margin: 3rem 0rem 3rem 3rem;
+            justify-content: space-between;
+            border-radius: 6px;
         }
         .card-title{
             text-align: center;
